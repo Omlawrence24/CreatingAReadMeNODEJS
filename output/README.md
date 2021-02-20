@@ -1,19 +1,28 @@
 # 
   # undefined
+  ##MIT
   ## Description
   
   ## Table of Contents
-  
+  ## Table of Contents
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [License](#license)
+ * [Contributing](#contributing)
+ * [test](#tests)
+ * [Your Info](#questions)
   ## Installation
   
   ## Usage
   
   ## License
-  license1
+  MIT
   ## Contributing
   
   ## Tests
   
   ## User Story and Directions
-  undefined
-  undefined
+  [omlawrence24](https://github.com/omlawrence24)
+
+  
+

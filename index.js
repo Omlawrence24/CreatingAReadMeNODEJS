@@ -1,18 +1,16 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const Choices = require("inquirer/lib/objects/choices");
-// TODO: Include packages needed for this application
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
+
 const questions = [];
 
 // const writeFileAsync = promisify(fs.writeFile);
 
-// TODO: Create a function to write README file
+// Creates a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
 
@@ -25,7 +23,7 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app
+// This prompts for read me input 
 function init() {
   console.log("Welcome to Node");
   console.log("README.md Generator! Answer some questions, and get a README.md file based on your response!");
@@ -63,7 +61,7 @@ function init() {
       type: "list",
       message: "License",
       name: "license",
-      choices: ['license1', 'license2','license3','license4'], //MIT, APACHE, etc...
+      choices: ['MIT', 'APACHE','BSD'], 
     },
     {
       type: "input",
@@ -92,7 +90,7 @@ function init() {
       name: "githubEmail",
     },
      ])
-
+  // gathers the data to create the README after user input 
     .then(function (data) {
       const read = generateMarkdown (data);
      
