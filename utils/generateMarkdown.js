@@ -4,9 +4,9 @@
 
 // Ive Created a function to generate markdowns for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
   # ${data.projectname}
-  ##${data.license}
+  ### ${data.license}
   ## Description
   ${data.description}
   ## Table of Contents
@@ -15,8 +15,8 @@ function generateMarkdown(data) {
  * [Usage](#usage)
  * [License](#license)
  * [Contributing](#contributing)
- * [test](#tests)
- * [Your Info](#questions)
+ * [Test](#tests)
+ * [Developer Info](#questions)
   ## Installation
   ${data.installation}
   ## Usage
@@ -27,10 +27,15 @@ function generateMarkdown(data) {
   ${data.contributing}
   ## Tests
   ${data.tests}
-  ## Creator Info
-  [${data.githubName}](https://github.com/${data.githubName})
-  ${data.githubEmail}
+  ## Developer Info
+  ${data.questions}
+  ## For any Questions or Concerns please Reach me at the info below.
+  
+  [${data.githubName}](https://github.com/${data.githubName}) 
 
+  ${data.githubEmail}
+  ## I've attached a link to the Step by Step Functionality of this Project.
+  https://drive.google.com/file/d/1LF2F8HlBsD_LWZ_wZyMkmh_3RvaOx3Gt/view
 `;
 }
 

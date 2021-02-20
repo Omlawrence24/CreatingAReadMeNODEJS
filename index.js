@@ -30,7 +30,7 @@ function init() {
   inquirer.prompt([
     {
       type: "input",
-      name: "title",
+      name: "projectname",
       message: "What would you like to name your Project?"
     },
     {
@@ -73,10 +73,10 @@ function init() {
       message: "Tests",
       name: "tests",
     },
-
+    
     {
       type: "input",
-      message: "Questions",
+      message: "Developer Info",
       name: "questions",
     },
     {
