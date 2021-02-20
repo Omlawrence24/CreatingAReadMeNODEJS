@@ -1,11 +1,17 @@
 const inquirer = require("inquirer");
-const fs = require("fs")
+const fs = require("fs");
+const Choices = require("inquirer/lib/objects/choices");
 // TODO: Include packages needed for this application
+const util = require("util");
+const generateReadme = require("./generateReadme");
 
+const writeFileAsync = util.promisify(fs.writeFile);
+const api = require("./api")
 
 // TODO: Create an array of questions for user input
 const questions = [];
 
+// const writeFileAsync = promisify(fs.writeFile);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -41,7 +47,7 @@ function init() {
 
     },
     {
-      type: "",
+      type: "input",
       message: "Description",
       name: "description",
     },
@@ -62,6 +68,7 @@ function init() {
       type: "list",
       message: "License",
       name: "license",
+      choices: ['license1', 'license2','license3','license4'],
     },
     {
       type: "input",
@@ -79,12 +86,22 @@ function init() {
       message: "Questions",
       name: "questions",
     },
+    {
+      type: "input",
+      message: "What is your GitHub Name",
+      name: "questions",
+    },
+    {
+      type: "input",
+      message: "What is your GitHub Email?",
+      name: "questions",
+    },
      ])
 
     .then(function (data) {
-      const html = generateHTML (data)
+      const readme = generateReadme (data)
      
-      return writeFileAsync("index.html", html);
+      return writeFileAsync("readme.md", html);
      
        })
        .then(function() {
@@ -97,41 +114,48 @@ function init() {
 
  
 }
-  function generateHTML(data) {
-    return `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="card text-center">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 id ="projectname"class="card-title">${date.title}</h5>
-              <h5 id ="projectname"class="card-title">${date.projectname}</h5>
-              <h4 id="topics"class="card-text"> ${data.contents}</h4>
-              <h4 id="topics"class="card-text"> ${data.description}</h4>
-              <h4 id="topics"class="card-text"> ${data.installation}</h4>
-              <h4 id="topics"class="card-text"> ${data.usage}</h4>
-              <h4 id="topics"class="card-text"> ${data.license}</h4>
-              <h4 id="topics"class="card-text"> ${data.contributing}</h4>
-              <h4 id="topics"class="card-text"> ${data.tests}</h4>
-              <h4 id="topics"class="card-text"> ${data.questions}</h4>  
-            </div>
-            <div class="card-footer text-muted">
+//   function generateHTML(data) {
+//     return `<!DOCTYPE html>
+//     <html lang="en">
+//     <head>
+//         <meta charset="UTF-8">
+//         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//         <title>Document</title>
+//     </head>
+//     <body>
+//         <div class="card text-center">
+//             <div class="card-header">
+//               README
+//             </div>
+//             <div class="card-body">
+//               <h1 id ="projectname"class="card-title">${data.title}</h1>
+//               <h2 id ="projectname"class="card-title">${data.projectname}</h2>
+//               <h1 id="topics"class="card-text"> Table of Contents</h1>
+//               <h4 id="topics"class="card-text"> ${data.contents}</h4>
+//               <h1 id="topics"class="card-text"> Description </h1>
+//               <h4 id="topics"class="card-text"> ${data.description}</h4>
+//               <h1 id="topics"class="card-text"> Installation </h1>
+//               <h4 id="topics"class="card-text"> ${data.installation}</h4>
+//               <h1 id="topics"class="card-text"> Usage </h1>
+//               <h4 id="topics"class="card-text"> ${data.usage}</h4>
+//               <h1 id="topics"class="card-text"> License </h1>
+//               <h4 id="topics"class="card-text"> ${data.license}</h4>
+//               <h1 id="topics"class="card-text"> Contributing </h1>
+//               <h4 id="topics"class="card-text"> ${data.contributing}</h4>
+//               <h1 id="topics"class="card-text"> Tests </h1>
+//               <h4 id="topics"class="card-text"> ${data.tests}</h4>
+//               <h1 id="topics"class="card-text"> Questions </h1>  
+//               <h4 id="topics"class="card-text"> ${data.questions}</h4>
+//             </div>
+//             <div class="card-footer text-muted">
               
-            </div>
-          </div>
+//             </div>
+//           </div>
         
-    </body>
-    </html>`;
-  }
+//     </body>
+//     </html>`
+//   }
   
     init() 
 
- 
