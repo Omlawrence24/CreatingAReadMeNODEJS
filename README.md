@@ -18,7 +18,7 @@
   You will need to install NPM, Inquirer, fs, and any Framework of your choice
 
   ## Usage
-  This is used to build out a nessary team for managment. they must be prompt with an option to add a new Intern or Engineer and once they are done they have the option to create the HTML by selecting they are ready to build out their team. Then it appears in the dist folder.
+  This is used to build out a necessary team for managment. They must be prompt with an option to add a new Intern or Engineer and once they are done they have the option to create the HTML by selecting they are ready to build out their team. Then it appears in the dist folder.
 
   ## License
   MIT
