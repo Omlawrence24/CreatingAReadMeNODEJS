@@ -1,6 +1,6 @@
 
 
-  # CReating a Custom Read Me
+  # Creating a Custom Read Me
   ### MIT
   
   ## Description
@@ -14,11 +14,11 @@
  * [Developer Info](#DeveloperInfo)
 
   ## Installation 
-  You will need to install NPM, Inquirer, fs, and any Framework of your choice
-
+  You will need to install NPM, Inquirer, Express, Node.js
+  
   ## Usage
-  This is used to build out a necessary team for managment. They must be prompt with an option to add a new Intern or Engineer and once they are done they have the option to create the HTML by selecting they are ready to build out their team. Then it appears in the dist folder.
-
+ This is used to create a Read Me this gives fellow developers and employers an inside look into the project. The key is to try to
+ give them the best insight possible in creating this site so that if others would like to add to or duplicate they can easily do so. 
   ## License
   MIT
 
