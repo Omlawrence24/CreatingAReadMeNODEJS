@@ -1,11 +1,11 @@
 
 
-  # Employee Profile
+  # CReating a Custom Read Me
   ### MIT
   
   ## Description
-  This Site allows the  employer to create a profile that will enable his management team to build out a team based on needs.
- 
+  This Site allows the User to create there very own custom read me in per project.
+  
   ## Table of Contents
  * [Installation](#installation)
  * [Usage](#usage)
