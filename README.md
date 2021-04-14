@@ -28,7 +28,7 @@
   ## Developer Info
   Obedia Lawrence 
   Omlawrence24@gmail.com 
-  [Omlawrence24](https://github.com/Omlawrence24) 
+  [Omlawrence24](https://github.com/Omlawrence24)  
 
 
   ## I've attached a link to the Step by Step Functionality of this Project.
