@@ -24,7 +24,7 @@
   MIT
 
   ## Contributing
-  node modules, package.json,  
+  node modules, package.json 
 
   ## Developer Info
   Obedia Lawrence Omlawrence24@gmail.com
