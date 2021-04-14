@@ -14,7 +14,7 @@
  * [Test](#tests)
  * [Developer Info](#DeveloperInfo)
 
-  ## Installation
+  ## Installation 
   You will need to install NPM, Inquirer, fs, and any Framework of your choice
 
   ## Usage
