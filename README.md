@@ -11,7 +11,6 @@
  * [Usage](#usage)
  * [License](#license)
  * [Contributing](#contributing)
- * [Test](#tests)
  * [Developer Info](#DeveloperInfo)
 
   ## Installation 
