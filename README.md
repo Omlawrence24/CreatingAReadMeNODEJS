@@ -27,10 +27,10 @@
   node modules, package.json 
 
   ## Developer Info
-  Obedia Lawrence Omlawrence24@gmail.com 
-  
+  Obedia Lawrence 
+  Omlawrence24@gmail.com 
   [Omlawrence24](https://github.com/Omlawrence24) 
-  omlawrence24@gmail.com
+
 
   ## I've attached a link to the Step by Step Functionality of this Project.
   https://drive.google.com/file/d/1LF2F8HlBsD_LWZ_wZyMkmh_3RvaOx3Gt/view
